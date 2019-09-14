@@ -26,7 +26,16 @@
     <mkdir dir="${dist}/lib"/>
 
     <!-- Put everything in ${build} into the MyProject-${DSTAMP}.war file -->
+    <!--
     <jar jarfile="${dist}/lib/MyProject-${DSTAMP}.jar" basedir="${build}"/>
+  -->
+     <war destfile = "chaitanya.war" webxml = "src/main/webapp/WEB-INF/web.xml">
+      <fileset dir = "src">
+         <include name = "**/*.*"/>
+      </fileset>
+      
+    
+   </war>
   </target>
 
   <target name="clean"
