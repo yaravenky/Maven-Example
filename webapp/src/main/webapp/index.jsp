@@ -1,10 +1,6 @@
 hello ,jenkins
 this is prakash.
 
-Hello I am chaitanya editeing index.jsp
+Hello I am chaitanya.
 
-editing again
-
-editing again
-
-I am being built by ant
+I am building this project with ant
