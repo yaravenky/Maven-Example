@@ -29,7 +29,7 @@
     <!--
     <jar jarfile="${dist}/lib/MyProject-${DSTAMP}.jar" basedir="${build}"/>
   -->
-     <war destfile = "chaitanya.war" webxml = "src/main/webapp/WEB-INF/web.xml">
+     <war destfile = "${dist}/lib/chaitanya.war" webxml = "src/main/webapp/WEB-INF/web.xml">
       <fileset dir = "src">
          <include name = "**/*.*"/>
       </fileset>
