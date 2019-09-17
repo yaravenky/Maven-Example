@@ -1,6 +1,2 @@
 hello ,jenkins
-this is prakash.
-
-Hello I am chaitanya.
-
-I am building this project with ant ant ant ant
+ I am uday
