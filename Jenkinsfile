@@ -19,6 +19,14 @@ pipeline
 						}
 				       }	       
 				}
+			
+			     stage ('code package') {
+				       steps {
+						withMaven(maven: 'MAVEN_HOME') {
+							sh 'mvn package'
+						}
+				       }	       
+				}
 				       
 	        }				       
 
