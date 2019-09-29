@@ -3,7 +3,7 @@ pipeline
 
 	agent any
 	
-		stage {
+		stages {
 				stage ('scm checkout') {
 					steps {
 						git 'https://github.com/chaitanyapratap19/maven-project.git'
