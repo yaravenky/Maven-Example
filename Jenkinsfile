@@ -12,7 +12,7 @@ pipeline
 
 
 
-				stage ('code test) {
+				stage ('code test') {
 				       steps {
 						withMaven(maven: 'MAVEN_HOME') {
 							sh 'mvn test'
