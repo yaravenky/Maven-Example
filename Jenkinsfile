@@ -26,6 +26,15 @@ pipeline
 							sh 'mvn package'
 						}
 				       }	       
+			      }
+			
+			
+			    stage ('code install') {
+				       steps {
+						withMaven(maven: 'MAVEN_HOME') {
+							sh 'mvn install'
+						}
+				       }	       
 				}
 				       
 	        }				       
