@@ -13,7 +13,7 @@ pipeline {
             
             
             stage ('Maven compile') {
-            agent {label 'maven'}
+           // agent {label 'maven'}
                   steps {
                     withMaven(jdk: 'JAVA_HOME', maven: 'MAVEN_HOME') {
                         sh 'mvn compile'
@@ -57,7 +57,7 @@ pipeline {
             
             }
             
-            
+          /*  
             stage ('build && SonarQube analysis') {
                   steps {
                           withSonarQubeEnv('sonar') {
@@ -71,6 +71,8 @@ pipeline {
                   }
             
             }
+            
+            */
             
             
             
