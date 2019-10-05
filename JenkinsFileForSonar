@@ -13,6 +13,7 @@ pipeline {
             
             
             stage ('Maven compile') {
+            agent {label 'maven'}
                   steps {
                     withMaven(jdk: 'JAVA_HOME', maven: 'MAVEN_HOME') {
                         sh 'mvn compile'
@@ -60,8 +61,7 @@ pipeline {
             stage ('build && SonarQube analysis') {
                   steps {
                           withSonarQubeEnv(credentialsId: 'sonar') {
-                                  // some block
-                                  
+                                  // some block                                 
                                   
                                   withMaven(jdk: 'JAVA_HOME', maven: 'MAVEN_HOME') {
                                     sh 'mvn clean package sonar:sonar'
