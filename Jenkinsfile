@@ -38,6 +38,36 @@ steps
 withMaven(jdk: 'localJDK', maven: 'localMaven') {
     sh 'mvn package'
 }}}
+    
+stage('package my project')
+{
+steps
+{
+withMaven(jdk: 'localJDK', maven: 'localMaven') {
+    sh 'mvn package'
+}}}
+    
+        
+stage('package my install')
+{
+steps
+{
+withMaven(jdk: 'localJDK', maven: 'localMaven') {
+    sh 'mvn install'
+}}}
+    
+stage('deploy to  tomcat')
+{
+steps
+{
+    sshagent (['3.18.213.59']) {
+	 sh 'scp -o StrictHostKeyChecking=no */target/*.war ec2-user@3.18.213.59:/var/lib/tomcat/webapps'
+						}
+}
+}
+    
+    
+    
 
 }
 }
