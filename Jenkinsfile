@@ -1,4 +1,4 @@
-pipeline
+pipeline {
 
 agent any
 
@@ -23,4 +23,5 @@ withMaven(jdk: 'localJDK', maven: 'localMaven') {
     sh 'mvn complile'
 }}}
 
+}
 }
