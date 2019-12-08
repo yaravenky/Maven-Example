@@ -20,7 +20,7 @@ stage('compile my project')
 steps
 {
 withMaven(jdk: 'localJDK', maven: 'localMaven') {
-    sh 'mvn complile'
+    sh 'mvn compile'
 }}}
 
 }
