@@ -39,13 +39,7 @@ withMaven(jdk: 'localJDK', maven: 'localMaven') {
     sh 'mvn package'
 }}}
     
-stage('package my project')
-{
-steps
-{
-withMaven(jdk: 'localJDK', maven: 'localMaven') {
-    sh 'mvn package'
-}}}
+
     
         
 stage('package my install')
