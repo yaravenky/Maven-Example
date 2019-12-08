@@ -31,7 +31,7 @@ withMaven(jdk: 'localJDK', maven: 'localMaven') {
     sh 'mvn test'
 }}}
     
-stage('test my project')
+stage('package my project')
 {
 steps
 {
