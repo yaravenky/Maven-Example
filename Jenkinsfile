@@ -1,7 +1,7 @@
 node {
 
 stage ('scm checkout') {
-git url: 'https://github.com/chaitanyapratap19/maven-project.git', branch: 'master'
+git url: 'https://github.com/chaitanyapratap19/maven-project.git', branch: 'mynewbranchscripted'
 }
 
 parallel creatapackage: {
