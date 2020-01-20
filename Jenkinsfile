@@ -21,6 +21,7 @@ steps
 {
 withMaven(jdk: 'localJDK', maven: 'localMaven') {
     sh 'mvn compile'
+	println 'added println'
 }}}
     
 stage('test my project')
