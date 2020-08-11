@@ -1,1 +1,1 @@
-hey guys, i will get deployed to Jboss
+hi jenkins plz take care of deployment
