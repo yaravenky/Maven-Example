@@ -31,7 +31,7 @@ stage('test my project')
 steps
 {
 withMaven(jdk: 'localJDK', maven: 'MAVEN_HOME') {
-    sh 'mvn test'
+    sh 'echo "mvn test"'
 }}}
     
 stage('package my project')
